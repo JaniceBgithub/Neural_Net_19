@@ -27,6 +27,9 @@ Accuracy was 0.7258 in baes case.
 
 Dropped the income amount and status with basically no change in the model - 0.7251 accuracy. Used a random forest and shap plot to determine feature importance. 
 
+![shap plot](https://github.com/JaniceBgithub/Neural_Net_19/blob/main/Resources/19.1-shap.png)
+
+
 ## Epochs
 
 In the above results, ran with 100 epochs.  Try 1000 with above (dropped income amount and status, 1 layer downt o 12 nuerons and relu)
