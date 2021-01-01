@@ -36,6 +36,8 @@ In the above results, ran with 100 epochs.  Try 1000 with above (dropped income 
 
 Accuracy only improved to 0.7283.
 
+![epochs](https://github.com/JaniceBgithub/Neural_Net_19/blob/main/Resources/19.2-epochs.png)
+
 
 
 
