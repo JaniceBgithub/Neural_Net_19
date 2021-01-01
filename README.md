@@ -32,6 +32,12 @@ Dropped the income amount and status with basically no change in the model - 0.7
 
 ## Epochs
 
-In the above results, ran with 100 epochs.  Try 1000 with above (dropped income amount and status, 1 layer downt o 12 nuerons and relu)
+In the above results, ran with 100 epochs.  Try 1000 with above (dropped income amount and status, 1 layer downt o 12 nuerons and relu).  As shown in the plot, the accuracy was improving with subsequent epochs, although this did not result in higher accuracy when run with the testing data set - likely due to overfitting when running that many epochs.
+
+Accuracy only improved to 0.7283.
+
+
+
+
 
 
