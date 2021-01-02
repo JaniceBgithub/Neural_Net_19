@@ -23,12 +23,29 @@ Accuracy was 0.7242.  Slight decline in performance vs the relu activation.
 
 ## Remove second layer and neurons in first layer down to 12
 
-Accuracy was 0.7258 in baes case.
+Accuracy was 0.7258 in base case.
 
-Dropped the income amount and status with basically no change in the model - 0.7251 accuracy. Used a random forest and shap plot to determine feature importance. 
+Dropped the income amount and status with basically no change in the model - 0.7251 accuracy. (Used a random forest and shap plot to determine feature importance).
+
+Then looked at impact of further simplifying the model and used 8 neurons in the first layer.  Result was only a very small drop in accuracy of 0.7241.
 
 ![shap plot](https://github.com/JaniceBgithub/Neural_Net_19/blob/main/Resources/19.1-shap.png)
 
+## Best performance
+
+- 100 epochs
+- 2 hidden layers (12 nodes in layer 1, 8 nodes in layer 2)
+- 1st hidden layer activation - relu
+- 2nd layer activation - swish
+- dropped income amount and status
+
+- Result was best so far 0.7279
+
+- (500 epochs with above was same result 0.7279)
+
+## Also dropped use case in addition to income and status (others as per best performance section)
+
+ Result was 0.7215, add use case back in!
 
 ## Epochs
 
@@ -37,6 +54,24 @@ In the above results, ran with 100 epochs.  Try 1000 with above (dropped income 
 Accuracy only improved to 0.7283.
 
 ![epochs](https://github.com/JaniceBgithub/Neural_Net_19/blob/main/Resources/19.2-epochs.png)
+
+## Changing binning for classification & application type
+
+- Base case was application type = 6 bins and classification = 7 bins
+- Changed to 9 & 12
+- 1st hidden layer = 12 neurons & relu
+- 2nd hidden layer = 8 neurons & swish
+- 100 epochs
+- Dropped income amount and status
+- Accuracy was 0.7248
+
+
+As per above, but changed bins to 5 & 4, accuracy dropped.
+
+
+
+
+
 
 
 
