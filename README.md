@@ -25,6 +25,10 @@ Accuracy was 0.7242.  Slight decline in performance vs the relu activation.
 
 Accuracy was 0.7258 in base case.
 
+Looked at a heatmap for insight into features to drop:
+
+![heat](https://github.com/JaniceBgithub/Neural_Net_19/blob/main/Resources/19-3-HEAT.png)
+
 Dropped the income amount and status with basically no change in the model - 0.7251 accuracy. (Used a random forest and shap plot to determine feature importance).
 
 Then looked at impact of further simplifying the model and used 8 neurons in the first layer.  Result was only a very small drop in accuracy of 0.7241.
